@@ -1,2 +1,3 @@
-# arduino_cp_project
+## Concurrent programming 
+### Arduino connection
 ![Arduino connection](diagram.png)
