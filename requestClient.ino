@@ -43,8 +43,8 @@ void loop() {
     Serial.print("Distance: ");
     Serial.print(distance, 1); Serial.println(" cm");
   
- if (distance<10){
-  digitalWrite(2, HIGH);
+ if (distance<10){ 
+  digitalWrite(2, HIGH);  //power on the internal led if we have near an object 
   delay(10);
 
   if (WiFi.status() == WL_CONNECTED) { //Check WiFi connection status
@@ -60,8 +60,9 @@ void loop() {
   }
   
  else{
- digitalWrite(2, LOW);
+  digitalWrite(2, LOW); //power off the internal led if no object is present
   delay(10);
+  
   if (WiFi.status() == WL_CONNECTED) { //Check WiFi connection status
     Serial.println("Estamos conectados");
     HTTPClient http;  //Declare an object of class HTTPClient
