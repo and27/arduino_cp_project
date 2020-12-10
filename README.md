@@ -1,2 +1,2 @@
-!# arduino_cp_project
-[Arduino connection](diagram.png)
+# arduino_cp_project
+![Arduino connection](diagram.png)
